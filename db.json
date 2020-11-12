@@ -1,0 +1,168 @@
+{
+  "posts": [
+    {
+      "id": "2",
+      "title": "Post Two",
+      "body": "This is the post body",
+      "status": true,
+      "images": "https://image.flaticon.com/icons/png/512/3/3901.png"
+    },
+    {
+      "id": "3",
+      "title": "Post Three",
+      "body": "This is the post body",
+      "status": false,
+      "images": "https://static.thenounproject.com/png/836287-200.png"
+    },
+    {
+      "id": "XXSedFV",
+      "title": "Post Four",
+      "body": "This is the body",
+      "status": true,
+      "images": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
+    },
+    {
+      "title": "Post",
+      "body": "this is post for",
+      "status": true,
+      "id": "Rbcf0hg",
+      "images": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
+    },
+    {
+      "title": "Alpha It ",
+      "body": "Hello",
+      "status": true,
+      "id": "1qNAxic",
+      "images": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
+    },
+    {
+      "images": null,
+      "title": "Hello",
+      "body": "hjhwsj",
+      "id": "7_xtWnq"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Bilal Hadid",
+      "email": "bilal@gmail.com",
+      "mobile": "03482091349",
+      "password": "123",
+      "administrator": true,
+      "image": [
+        {
+          "url": "https://s3.ivisa.com/website-assets/blog/id-photo2.jpg",
+          "desc": "First image"
+        }
+      ],
+      "gender": "male",
+      "birth": "22-12-2020",
+      "your Website": "https://image.flaticon.com",
+      "yourAddress": "",
+      "Biography": ""
+    }
+  ],
+  "networks": [
+    {
+      "id": "1",
+      "name": "Bilal Hadid",
+      "username": "bilal",
+      "password": "123"
+    },
+    {
+      "id": "2",
+      "name": "Bilal Hadid",
+      "username": "bilal",
+      "password": "123"
+    },
+    {
+      "id": "3",
+      "name": "Bilal Hadid",
+      "username": "bilal",
+      "password": "123"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "name": "Easter Day",
+      "url": "https://www.pricecutoff.com/category-dtl/easter-deals",
+      "expire": "2020-03-29"
+    },
+    {
+      "id": "2",
+      "name": "Mother Day",
+      "url": "https://www.pricecutoff.com/category-dtl/easter-deals",
+      "expire": "2020-03-29"
+    }
+  ],
+  "store": [
+    {
+      "id": "1",
+      "image": [
+        {
+          "url": "https://image.flaticon.com/icons/png/128/44/44255.png",
+          "desc": "First image"
+        }
+      ],
+      "title": "Bathroom Wall Tshirt",
+      "link": "https://www.paidonresults.net/c/55186/1/357/0",
+      "fetured": true,
+      "status": false
+    }
+  ],
+  "forumcategory": [
+    {
+      "id": "1",
+      "type": "coupon",
+      "title": "General Coupon",
+      "detail": "General Coupon",
+      "status": false
+    },
+    {
+      "type": "coupon",
+      "title": "Alpha It ",
+      "detail": "helo",
+      "status": true,
+      "id": "eI9PVnr"
+    }
+  ],
+  "CouponDeal": [
+    {
+      "id": "1",
+      "image": [
+        {
+          "url": "https://image.flaticon.com/icons/png/128/44/44255.png",
+          "desc": "First image"
+        }
+      ],
+      "type": "coupon",
+      "ForumCategory": "General Coupon",
+      "title": "30% off Over $185+...",
+      "store": "LaBante",
+      "category": "Clothing",
+      "user": "Jhon",
+      "couponcode": "",
+      "dealexpire": "22-33-22",
+      "fetured": true,
+      "Verified": true,
+      "status": false,
+      "dealExclusive": true
+    }
+  ],
+  "discussion": [
+    {
+      "id": "1",
+      "image": null,
+      "type": "coupon",
+      "title": "",
+      "detail": "",
+      "user": "",
+      "featured": false,
+      "status": false,
+      "Action": false,
+      "fetured": true
+    }
+  ]
+}
