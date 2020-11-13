@@ -7,4 +7,9 @@
 .thumbNail img {
   height: 60px;
   width: 60px;
+  margin-left: -20px;
+}
+.Rasdio RadioButtonGroupInput {
+  height: 10%;
+  display: block;
 }

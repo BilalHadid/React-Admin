@@ -26,6 +26,36 @@ import CouponEdit from "./component/coupons/CouponEdit";
 import DiscussionList from "./component/discussion/DiscussionList";
 import DiscussionCreate from "./component/discussion/DiscussionCreate";
 import DiscussionEdit from "./component/discussion/DiscussionEdit";
+import BlogCreate from "./component/Blog/BlogCreate";
+import BlogEdit from "./component/Blog/BlogEdit";
+import BlogList from "./component/Blog/BlogList";
+import Commentist from "./component/comment/CommentList";
+import FaqList from "./component/FAQ/FaqList";
+import { createMuiTheme } from "@material-ui/core/styles";
+import PageList from "./component/Pages/PageList";
+import PageEdit from "./component/Pages/PageEdit";
+import PageCreate from "./component/Pages/PageCreate";
+import HomeCreate from "./component/Home/HomeCreate";
+import HomeList from "./component/Home/HomeList";
+import CategoryIcon from "@material-ui/icons/Category";
+import DnsIcon from "@material-ui/icons/Dns";
+import EventIcon from "@material-ui/icons/Event";
+import StoreIcon from "@material-ui/icons/Store";
+import ForumIcon from "@material-ui/icons/Forum";
+import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
+import InsertCommentIcon from "@material-ui/icons/InsertComment";
+import GroupAddIcon from "@material-ui/icons/GroupAdd";
+import BookIcon from "@material-ui/icons/Book";
+import LiveHelpIcon from "@material-ui/icons/LiveHelp";
+import PagesIcon from "@material-ui/icons/Pages";
+import HomeWorkIcon from "@material-ui/icons/HomeWork";
+import SettingsIcon from "@material-ui/icons/Settings";
+
+const theme = createMuiTheme({
+  palette: {
+    type: "dark", // Switching the dark mode on is a single property value change.
+  },
+});
 
 function App() {
   return (
@@ -35,6 +65,7 @@ function App() {
     >
       <Resource
         name="posts"
+        icon={CategoryIcon}
         list={PostList}
         create={PostCreate}
         edit={PostEdit}
@@ -42,84 +73,79 @@ function App() {
 
       <Resource
         name="networks"
+        icon={DnsIcon}
         list={NetworkList}
         create={NetworkCreate}
         edit={NetworkEdit}
       />
       <Resource
         name="Events"
+        icon={EventIcon}
         list={EventList}
         create={EventCreate}
         edit={EventEdit}
       />
       <Resource
         name="Store"
+        icon={StoreIcon}
         list={StoreList}
         create={StoreCreate}
         edit={StoreEdit}
       />
       <Resource
         name="forumcategory"
+        icon={ForumIcon}
         list={ForumList}
         create={ForumCreate}
         edit={ForumEdit}
       />
       <Resource
         name="CouponDeal"
+        icon={CardGiftcardIcon}
         list={CouponList}
         create={CouponCreate}
         edit={CouponEdit}
       />
       <Resource
         name="discussion"
+        icon={ForumIcon}
         list={DiscussionList}
         create={DiscussionCreate}
         edit={DiscussionEdit}
       />
-      <Resource
-        name="Comments"
-        list={UserList}
-        create={UserCreate}
-        edit={UserEdit}
-      />
+      <Resource name="comment" list={Commentist} icon={InsertCommentIcon} />
       <Resource
         name="users"
+        icon={GroupAddIcon}
         list={UserList}
         create={UserCreate}
         edit={UserEdit}
       />
       <Resource
-        name="Blog"
-        list={UserList}
-        create={UserCreate}
-        edit={UserEdit}
+        name="blog"
+        icon={BookIcon}
+        list={BlogList}
+        create={BlogCreate}
+        edit={BlogEdit}
+      />
+
+      <Resource name="FAQ" list={FaqList} icon={LiveHelpIcon} />
+      <Resource
+        name="pages"
+        icon={PagesIcon}
+        list={PageList}
+        create={PageCreate}
+        edit={PageEdit}
       />
       <Resource
-        name="users"
-        list={UserList}
-        create={UserCreate}
-        edit={UserEdit}
-      />
-      <Resource
-        name="FAQ"
-        list={UserList}
-        create={UserCreate}
-        edit={UserEdit}
-      />
-      <Resource
-        name="Pages"
-        list={UserList}
-        create={UserCreate}
-        edit={UserEdit}
-      />
-      <Resource
-        name="Home Banner"
-        list={UserList}
-        create={UserCreate}
-        edit={UserEdit}
+        name="homebanner"
+        list={HomeList}
+        create={HomeCreate}
+        icon={HomeWorkIcon}
       />
       <Resource
         name="Setting"
+        icon={SettingsIcon}
         list={UserList}
         create={UserCreate}
         edit={UserEdit}

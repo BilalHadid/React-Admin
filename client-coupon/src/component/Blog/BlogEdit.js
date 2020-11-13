@@ -7,30 +7,33 @@ import {
   ImageInput,
   BooleanInput,
   DateInput,
+  SelectInput,
 } from "react-admin";
 import RichTextInput from "ra-input-rich-text";
 
-const UserEdit = (props) => {
+const BlogEdit = (props) => {
   return (
     <Edit title="Edit a User" {...props}>
       <SimpleForm>
         <TextInput disabled source="id" />
-        <TextInput source="name" />
-        <TextInput source="email" />
-        <TextInput source="mobile" />
-        <TextInput source="password" />
-        <BooleanInput source="administrator" />
+        <SelectInput source="user" choices={[{ id: "jhon", name: "Jhon" }]} />
+        <TextInput source="title" />
+        <SelectInput
+          source="tag"
+          choices={[{ id: "coupon", name: "Huge Discount" }]}
+        />
+
         <ImageInput source="image" label="desc" accept="image/*">
           <ImageField source="url" title="desc" />
         </ImageInput>
-        <TextInput source="gender" />
-        <DateInput source="birth" />
-        <TextInput source="your Website" />
-        <RichTextInput source="yourAddress" />
-        <RichTextInput source="Biography" />
+
+        <RichTextInput source="description" />
+        <DateInput source="timestamp" />
+
+        <BooleanInput source="status" />
       </SimpleForm>
     </Edit>
   );
 };
 
-export default UserEdit;
+export default BlogEdit;

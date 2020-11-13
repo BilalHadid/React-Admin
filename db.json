@@ -144,7 +144,7 @@
       "category": "Clothing",
       "user": "Jhon",
       "couponcode": "",
-      "dealexpire": "22-33-22",
+      "dealexpire": "2020-11-03",
       "fetured": true,
       "Verified": true,
       "status": false,
@@ -163,6 +163,68 @@
       "status": false,
       "Action": false,
       "fetured": true
+    }
+  ],
+  "blog": [
+    {
+      "id": "1",
+      "image": [
+        {
+          "url": "https://149359887.v2.pressablecdn.com/wp-content/uploads/2017/11/sale.png",
+          "desc": "First image"
+        }
+      ],
+      "title": "Big Deal For Memorial Day",
+      "description": "MEMORIAL DAY BLOGKnock knock.....",
+      "created": "jhon",
+      "status": false,
+      "timestamp": "2020-03-20",
+      "tag": "HugeDiscount"
+    }
+  ],
+  "comment": [
+    {
+      "id": "1",
+      "comments": "",
+      "title": "",
+      "user": "",
+      "repliedto": "",
+      "comment": "",
+      "status": "",
+      "Action": ""
+    }
+  ],
+  "faq": [
+    {
+      "id": "1",
+      "Category": "",
+      "Question": "",
+      "Answer": "",
+      "Action": false
+    }
+  ],
+  "pages": [
+    {
+      "id": "1",
+      "title": "About Us",
+      "body": "About UsPricecutoff has started the business of o...",
+      "footerWidget": "Widget1"
+    }
+  ],
+  "homebanner": [
+    {
+      "id": "1",
+      "BannerName": "HomeSlider1",
+      "BannerHeding": "BEST DEALS AND COUPONS AT ideacoupons",
+      "BannerSubheading": "",
+      "overlay": true,
+      "Parallex": true,
+      "image": [
+        {
+          "url": "https://149359887.v2.pressablecdn.com/wp-content/uploads/2017/11/sale.png",
+          "desc": "First image"
+        }
+      ]
     }
   ]
 }

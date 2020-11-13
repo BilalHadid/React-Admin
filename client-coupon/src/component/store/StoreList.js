@@ -15,14 +15,12 @@ const StoreList = (props) => {
     <List {...props}>
       <Datagrid>
         <TextField source="id" />
-        <ImageField
-          source="image"
-          src="url"
-          title="desc"
-          className="thumbNail"
-        />
-        <TextField source="title" />
-        <UrlField source="link" />
+
+        <TextField source="name" />
+
+        {/* <UrlField source="" /> */}
+        <TextField source="SelectNetwork" />
+        <TextField source="Country" />
         <BooleanField source="featured" />
         <BooleanField source="status" />
         <EditButton basePath="/store" />
