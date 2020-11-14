@@ -29,9 +29,8 @@ const StoreCreate = (props) => {
           <RadioButtonGroupInput
             source="SelectNetwork"
             choices={[
-              { id: "programming", name: "Programming" },
-              { id: "lifestyle", name: "Lifestyle" },
-              { id: "photography", name: "Photography" },
+              { id: "programming", name: "Paid On Result" },
+              { id: "photography", name: "ClickWise" },
             ]}
           />
         </Card>

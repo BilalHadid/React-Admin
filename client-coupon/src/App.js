@@ -31,7 +31,6 @@ import BlogEdit from "./component/Blog/BlogEdit";
 import BlogList from "./component/Blog/BlogList";
 import Commentist from "./component/comment/CommentList";
 import FaqList from "./component/FAQ/FaqList";
-import { createMuiTheme } from "@material-ui/core/styles";
 import PageList from "./component/Pages/PageList";
 import PageEdit from "./component/Pages/PageEdit";
 import PageCreate from "./component/Pages/PageCreate";
@@ -49,13 +48,6 @@ import BookIcon from "@material-ui/icons/Book";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
 import PagesIcon from "@material-ui/icons/Pages";
 import HomeWorkIcon from "@material-ui/icons/HomeWork";
-import SettingsIcon from "@material-ui/icons/Settings";
-
-const theme = createMuiTheme({
-  palette: {
-    type: "dark", // Switching the dark mode on is a single property value change.
-  },
-});
 
 function App() {
   return (
@@ -143,13 +135,13 @@ function App() {
         create={HomeCreate}
         icon={HomeWorkIcon}
       />
-      <Resource
+      {/* <Resource
         name="Setting"
         icon={SettingsIcon}
         list={UserList}
         create={UserCreate}
         edit={UserEdit}
-      />
+      /> */}
     </Admin>
   );
 }
