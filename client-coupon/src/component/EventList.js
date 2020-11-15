@@ -5,11 +5,22 @@ import {
   TextField,
   EditButton,
   DeleteButton,
+  Filter,
+  SearchInput,
 } from "react-admin";
+const PostFilter = (props) => (
+  <Filter {...props}>
+    <SearchInput source="name" resettable alwaysOn />
+  </Filter>
+);
 
 const EventList = (props) => {
   return (
-    <List {...props}>
+    <List
+      {...props}
+      filters={<PostFilter />}
+      filterDefaultValues={{ is_published: true }}
+    >
       <Datagrid>
         <TextField source="id" />
         <TextField source="name" />

@@ -10,12 +10,22 @@ import {
   ImageField,
   DateField,
   RichTextField,
+  Filter,
+  SearchInput,
+  TextInput,
 } from "react-admin";
+
 import "./user.css";
+
+const PostFilter = (props) => (
+  <Filter {...props}>
+    <TextInput label="search" source="name" resettable alwaysOn />
+  </Filter>
+);
 
 const UserList = (props) => {
   return (
-    <List {...props}>
+    <List {...props} filters={<PostFilter />}>
       <Datagrid>
         <TextField source="id" />
         <TextField source="name" />

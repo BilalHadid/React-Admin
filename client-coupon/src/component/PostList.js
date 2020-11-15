@@ -7,12 +7,23 @@ import {
   DeleteButton,
   ImageField,
   BooleanField,
+  Filter,
+  SearchInput,
 } from "react-admin";
 import "./user.css";
+const PostFilter = (props) => (
+  <Filter {...props}>
+    <SearchInput source="title" alwaysOn />
+  </Filter>
+);
 
 const PostList = (props) => {
   return (
-    <List {...props}>
+    <List
+      {...props}
+      filters={<PostFilter />}
+      sort={{ field: "id", order: "DESC" }}
+    >
       <Datagrid>
         <TextField source="id" />
         <ImageField source="images" title="images" className="thumbNail" />

@@ -7,12 +7,21 @@ import {
   DeleteButton,
   BooleanField,
   ImageField,
+  Filter,
+  SearchInput,
 } from "react-admin";
+
 import "../user.css";
+
+const PostFilter = (props) => (
+  <Filter {...props}>
+    <SearchInput source="title" resettable alwaysOn />
+  </Filter>
+);
 
 const CouponList = (props) => {
   return (
-    <List {...props}>
+    <List {...props} filters={<PostFilter />}>
       <Datagrid>
         <TextField source="id" />
         <ImageField source="image" className="thumbNail" />

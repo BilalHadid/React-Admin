@@ -8,11 +8,20 @@ import {
   ImageField,
   BooleanField,
   UrlField,
+  Filter,
+  SearchInput,
 } from "react-admin";
+
 import "../user.css";
+
+const PostFilter = (props) => (
+  <Filter {...props}>
+    <SearchInput source="title" resettable alwaysOn />
+  </Filter>
+);
 const StoreList = (props) => {
   return (
-    <List {...props}>
+    <List {...props} filters={<PostFilter />}>
       <Datagrid>
         <TextField source="id" label="#" />
 

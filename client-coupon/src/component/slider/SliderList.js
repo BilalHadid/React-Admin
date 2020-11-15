@@ -6,8 +6,6 @@ import {
   EditButton,
   DeleteButton,
   ImageField,
-  BooleanField,
-  UrlField,
 } from "react-admin";
 import "../user.css";
 const SliderList = (props) => {

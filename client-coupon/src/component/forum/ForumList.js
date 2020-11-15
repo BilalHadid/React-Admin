@@ -6,10 +6,20 @@ import {
   EditButton,
   DeleteButton,
   BooleanField,
+  Filter,
+  SearchInput,
 } from "react-admin";
+
+import "../user.css";
+
+const PostFilter = (props) => (
+  <Filter {...props}>
+    <SearchInput source="title" resettable alwaysOn />
+  </Filter>
+);
 const ForumList = (props) => {
   return (
-    <List {...props}>
+    <List {...props} filters={<PostFilter />}>
       <Datagrid>
         <TextField source="id" />
 
