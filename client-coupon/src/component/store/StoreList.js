@@ -14,13 +14,13 @@ const StoreList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
-        <TextField source="id" />
+        <TextField source="id" label="#" />
 
-        <TextField source="name" />
+        <TextField source="title" label="Title" />
 
         {/* <UrlField source="" /> */}
-        <TextField source="SelectNetwork" />
-        <TextField source="Country" />
+        <TextField source="SelectNetwork" label="Networks" />
+        <TextField source="Address" />
         <BooleanField source="featured" />
         <BooleanField source="status" />
         <EditButton basePath="/store" />

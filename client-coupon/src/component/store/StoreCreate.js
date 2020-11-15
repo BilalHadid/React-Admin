@@ -7,6 +7,7 @@ import {
   BooleanInput,
   ImageField,
   RadioButtonGroupInput,
+  DateInput,
 } from "react-admin";
 import { Card } from "@material-ui/core";
 import RichTextInput from "ra-input-rich-text";
@@ -34,6 +35,7 @@ const StoreCreate = (props) => {
             ]}
           />
         </Card>
+        <DateInput source="leftTime" />
         <ImageInput source="image" label="desc" accept="">
           <ImageField source="image" src="url" title="desc" />
         </ImageInput>

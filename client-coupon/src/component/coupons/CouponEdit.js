@@ -37,24 +37,16 @@ const CouponEdit = (props) => {
         <SelectInput
           source="category"
           choices={[
-            { id: "Apperal", name: "Aperal Clothing" },
-            { id: "Health", name: "Health & Beauty" },
-            { id: "3", name: "Book & Media" },
-            { id: "4", name: "Travel" },
-            { id: "5", name: "Cameras" },
-            { id: "6", name: "Electronics" },
-            { id: "7", name: "Mobile" },
-            { id: "8", name: "Food & Drinks" },
-            { id: "9", name: "Automotive" },
-            { id: "10", name: "Art" },
+            { id: "Apperal", name: "Gift" },
+            { id: "Health", name: "Fashion" },
+            { id: "3", name: "Accessories" },
           ]}
         />
 
         <TextInput source="title" />
-        <ImageInput source="image" label="desc" accept="image/*">
-          <ImageField source="url" title="desc" />
-        </ImageInput>
+        <ImageInput source="image" accept="image/*"></ImageInput>
         <TextInput source="couponscode" />
+        <TextInput source="dealURL" />
         <DateInput source="dealexpire" />
         <BooleanInput source="fetured" />
         <BooleanInput source="dealExclusive" />

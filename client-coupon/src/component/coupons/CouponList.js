@@ -15,12 +15,7 @@ const CouponList = (props) => {
     <List {...props}>
       <Datagrid>
         <TextField source="id" />
-        <ImageField
-          source="image"
-          src="url"
-          title="desc"
-          className="thumbNail"
-        />
+        <ImageField source="image" className="thumbNail" />
         <TextField source="type" />
         <TextField source="ForumCategory" />
         <TextField source="title" />

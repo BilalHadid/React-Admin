@@ -5,7 +5,12 @@
       "title": "Post Two",
       "body": "This is the post body",
       "status": true,
-      "images": "https://image.flaticon.com/icons/png/512/3/3901.png"
+      "images": {
+        "rawFile": {
+          "path": "Screenshot from 2020-11-13 20-19-08.png"
+        },
+        "images": "Screenshot from 2020-11-13 20-19-08.png"
+      }
     },
     {
       "id": "3",
@@ -34,12 +39,6 @@
       "status": true,
       "id": "1qNAxic",
       "images": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
-    },
-    {
-      "images": null,
-      "title": "Hello",
-      "body": "hjhwsj",
-      "id": "7_xtWnq"
     }
   ],
   "users": [
@@ -99,17 +98,54 @@
   ],
   "store": [
     {
+      "name": "Hadid",
+      "title": "Aproved Vitamins",
+      "url": "https://ideacoupons.com",
+      "Tracking Link": "https://ideacoupons.com",
+      "metatitle": "haddi",
+      "metaKeywords": "njjsbjsabj",
+      "metaDisc": "hjhjdgj",
+      "SelectNetwork": "programming",
+      "Address": "Shahr e Faisal,Karachi",
+      "Description": "Shahr e Faisal,Karachi",
+      "image": "https://pricecutoff.com/public/images/store/1585918856approvedvitamins.png",
+      "featured": true,
       "id": "1",
-      "image": [
-        {
-          "url": "https://image.flaticon.com/icons/png/128/44/44255.png",
-          "desc": "First image"
-        }
-      ],
-      "title": "Bathroom Wall Tshirt",
-      "link": "https://www.paidonresults.net/c/55186/1/357/0",
-      "fetured": true,
-      "status": false
+      "leftTime": "2-30-20"
+    },
+    {
+      "name": "Hadid",
+      "title": "Ammie Skin Care ",
+      "url": "https://ideacoupons.com",
+      "Tracking Link": "https://ideacoupons.com",
+      "metatitle": "haddi",
+      "metaKeywords": "njjsbjsabj",
+      "metaDisc": "hjhjdgj",
+      "SelectNetwork": "programming",
+      "Address": "Shahr e Faisal,Karachi",
+      "Description": "Shahr e Faisal,Karachi",
+      "image": "https://pricecutoff.com/public/images/store/1585918265amieskincare.png",
+      "featured": true,
+      "id": "2",
+      "leftTime": "2-30-20"
+    },
+    {
+      "name": "Hadid",
+      "title": "Shoe Embassy  ",
+      "url": "https://ideacoupons.com",
+      "Tracking Link": "https://ideacoupons.com",
+      "metatitle": "haddi",
+      "metaKeywords": "njjsbjsabj",
+      "metaDisc": "hjhjdgj",
+      "SelectNetwork": "programming",
+
+      "Address": "Shahr e Faisal,Karachi",
+      "Description": "Shahr e Faisal,Karachi",
+      "image": "https://pricecutoff.com/public/images/store/1585737922shoe%20embassy.png",
+      "featured": true,
+      "id": "3",
+
+      "leftTime": "2-30-20"
     }
   ],
   "forumcategory": [
@@ -131,20 +167,67 @@
   "CouponDeal": [
     {
       "id": "1",
-      "image": [
-        {
-          "url": "https://image.flaticon.com/icons/png/128/44/44255.png",
-          "desc": "First image"
-        }
-      ],
+      "image": "https://ideacoupons.com/wp-content/uploads/2020/08/certified-watch-store.jpg",
       "type": "coupon",
       "ForumCategory": "General Coupon",
       "title": "30% off Over $185+...",
       "store": "LaBante",
-      "category": "Clothing",
+      "category": "Gift",
       "user": "Jhon",
-      "couponcode": "",
+      "couponcode": "Welcome",
       "dealexpire": "2020-11-03",
+      "dealURL": "https://ideacoupons.com/",
+      "fetured": false,
+      "Verified": true,
+      "status": false,
+      "dealExclusive": true
+    },
+    {
+      "id": "2",
+      "image": "https://ideacoupons.com/wp-content/uploads/2020/08/clotstudiologo.jpg",
+      "type": "coupon",
+      "ForumCategory": "General Coupon",
+      "title": "50% Off Face Mask Respirator Comfort 50 Pack",
+      "store": "LaBante",
+      "category": "Fashion",
+      "user": "Jhon",
+      "couponcode": "Welcome15",
+      "dealexpire": "2020-11-03",
+      "dealURL": "https://ideacoupons.com/",
+      "fetured": true,
+      "Verified": true,
+      "status": false,
+      "dealExclusive": true
+    },
+    {
+      "id": "3",
+      "image": "https://ideacoupons.com/wp-content/uploads/2020/08/cbr.jpg",
+      "type": "coupon",
+      "ForumCategory": "General Coupon",
+      "title": "10% Off SiteWide + Free Shipping",
+      "store": "LaBante",
+      "category": "Accessories",
+      "user": "Jhon",
+      "couponcode": "TourList",
+      "dealexpire": "2020-11-03",
+      "dealURL": "https://ideacoupons.com/",
+      "fetured": true,
+      "Verified": true,
+      "status": false,
+      "dealExclusive": true
+    },
+    {
+      "id": "4",
+      "image": "https://ideacoupons.com/wp-content/uploads/2020/08/cbr.jpg",
+      "type": "coupon",
+      "ForumCategory": "General Coupon",
+      "title": "10% Off SiteWide + Free Shipping",
+      "store": "LaBante",
+      "category": "Accessories",
+      "user": "Jhon",
+      "couponcode": "TourList",
+      "dealexpire": "2020-11-03",
+      "dealURL": "https://ideacoupons.com/",
       "fetured": true,
       "Verified": true,
       "status": false,
@@ -225,6 +308,20 @@
           "desc": "First image"
         }
       ]
+    }
+  ],
+  "slider": [
+    {
+      "id": "1",
+      "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/agency-picture-slideshow-768x404.png"
+    },
+    {
+      "id": "2",
+      "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/omega-responsive-image-slider-1024x566.png"
+    },
+    {
+      "id": "3",
+      "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/interior-design-slideshow-768x420.png"
     }
   ]
 }

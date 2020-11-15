@@ -48,6 +48,10 @@ import BookIcon from "@material-ui/icons/Book";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
 import PagesIcon from "@material-ui/icons/Pages";
 import HomeWorkIcon from "@material-ui/icons/HomeWork";
+import SliderEdit from "./component/slider/SliderEdit";
+import SliderCreate from "./component/slider/SliderCreate";
+import SliderList from "./component/slider/SliderList";
+import SlideshowIcon from "@material-ui/icons/Slideshow";
 
 function App() {
   return (
@@ -78,7 +82,7 @@ function App() {
         edit={EventEdit}
       />
       <Resource
-        name="Store"
+        name="store"
         icon={StoreIcon}
         list={StoreList}
         create={StoreCreate}
@@ -106,6 +110,13 @@ function App() {
         edit={DiscussionEdit}
       />
       <Resource name="comment" list={Commentist} icon={InsertCommentIcon} />
+      <Resource
+        name="slider"
+        icon={SlideshowIcon}
+        list={SliderList}
+        create={SliderCreate}
+        edit={SliderEdit}
+      />
       <Resource
         name="users"
         icon={GroupAddIcon}
