@@ -8,6 +8,7 @@ import {
   SelectInput,
   ImageField,
   DateInput,
+  ReferenceInput,
 } from "react-admin";
 
 import RichTextInput from "ra-input-rich-text";
@@ -16,7 +17,9 @@ const BlogCreate = (props) => {
   return (
     <Create title="Create a Forum & Categories" {...props}>
       <SimpleForm>
-        <SelectInput source="user" choices={[{ id: "jhon", name: "Jhon" }]} />
+        <ReferenceInput label="users" source="user" reference="users">
+          <SelectInput optionText="name" />
+        </ReferenceInput>
         <TextInput source="title" />
         <SelectInput
           source="tag"

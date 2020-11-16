@@ -8,6 +8,7 @@ import {
   BooleanInput,
   DateInput,
   SelectInput,
+  ReferenceInput,
 } from "react-admin";
 import RichTextInput from "ra-input-rich-text";
 
@@ -16,7 +17,9 @@ const BlogEdit = (props) => {
     <Edit title="Edit a User" {...props}>
       <SimpleForm>
         <TextInput disabled source="id" />
-        <SelectInput source="user" choices={[{ id: "jhon", name: "Jhon" }]} />
+        <ReferenceInput label="users" source="user" reference="users">
+          <SelectInput optionText="name" />
+        </ReferenceInput>
         <TextInput source="title" />
         <SelectInput
           source="tag"

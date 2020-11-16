@@ -7,12 +7,15 @@ import {
   BooleanInput,
   SelectInput,
   ImageField,
+  ReferenceInput,
 } from "react-admin";
 const DiscussionCreate = (props) => {
   return (
     <Create title="Create a Forum & Categories" {...props}>
       <SimpleForm>
-        <SelectInput source="user" choices={[{ id: "jhon", name: "Jhon" }]} />
+        <ReferenceInput label="users" source="user" reference="users">
+          <SelectInput optionText="name" />
+        </ReferenceInput>
         <SelectInput source="type" choices={[{ id: "", name: "" }]} />
 
         <TextInput source="title" />

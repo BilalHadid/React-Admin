@@ -8,6 +8,8 @@ import {
   ImageField,
   DateInput,
   RadioButtonGroupInput,
+  ReferenceInput,
+  SelectInput,
 } from "react-admin";
 import { Card } from "@material-ui/core";
 import RichTextInput from "ra-input-rich-text";
@@ -26,13 +28,20 @@ const StoreEdit = (props) => {
         <TextInput source="metaDisc" />
         <RichTextInput source="Description" />
         <Card className="Rasdio">
-          <RadioButtonGroupInput
+          {/* <RadioButtonGroupInput
             source="SelectNetwork"
             choices={[
               { id: "programming", name: "Paid On Result" },
               { id: "photography", name: "ClickWise" },
             ]}
-          />
+          /> */}
+          <ReferenceInput
+            label="Networks"
+            source="SelectNetwork"
+            reference="networks"
+          >
+            <SelectInput optionText="name" />
+          </ReferenceInput>
         </Card>
         <DateInput source="leftTime" />
         <ImageInput source="image" label="desc" accept="">

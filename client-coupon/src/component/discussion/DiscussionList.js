@@ -9,6 +9,7 @@ import {
   ImageField,
   Filter,
   SearchInput,
+  ReferenceField,
 } from "react-admin";
 
 import "../user.css";
@@ -32,8 +33,9 @@ const DiscussionList = (props) => {
         <TextField source="type" />
         <TextField source="title" />
         <TextField source="detail" />
-        <TextField source="user" />
-
+        <ReferenceField label="users" source="user" reference="users">
+          <TextField source="name" />
+        </ReferenceField>
         <BooleanField source="fetured" />
         <BooleanField source="Action" />
         <BooleanField source="status" />

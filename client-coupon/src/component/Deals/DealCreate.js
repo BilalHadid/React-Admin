@@ -10,7 +10,8 @@ import {
   DateInput,
   ReferenceInput,
 } from "react-admin";
-const CouponCreate = (props) => {
+import RichTextInput from "ra-input-rich-text";
+const DealCreate = (props) => {
   return (
     <Create title="Create a Forum & Categories" {...props}>
       <SimpleForm>
@@ -19,9 +20,9 @@ const CouponCreate = (props) => {
           <SelectInput optionText="name" />
         </ReferenceInput>
         {/* <SelectInput
-          source="ForumCategory"
-          choices={[{ id: "coupon", name: "General Coupon" }]}
-        /> */}
+      source="ForumCategory"
+      choices={[{ id: "coupon", name: "General Coupon" }]}
+    /> */}
         <ReferenceInput
           label="Forum & Category"
           source="ForumCategory"
@@ -33,37 +34,38 @@ const CouponCreate = (props) => {
           <SelectInput optionText="title" />
         </ReferenceInput>
         {/* <SelectInput
-          source="store"
-          choices={[
-            { id: "1", name: "BathroomWall T-shirt" },
-            { id: "2", name: "Daisy Baby Shop" },
-            { id: "3", name: "DB3 Online" },
-            { id: "4", name: "Dead Good Undies" },
-            { id: "5", name: "Envie4u" },
-            { id: "6", name: "Mega T-shirt store" },
-            { id: "7", name: "Nazz Collection" },
-            { id: "8", name: "Opera Cambi" },
-            { id: "9", name: "Rock n Romance" },
-            { id: "10", name: "Snide London" },
-          ]}
-        /> */}
+      source="store"
+      choices={[
+        { id: "1", name: "BathroomWall T-shirt" },
+        { id: "2", name: "Daisy Baby Shop" },
+        { id: "3", name: "DB3 Online" },
+        { id: "4", name: "Dead Good Undies" },
+        { id: "5", name: "Envie4u" },
+        { id: "6", name: "Mega T-shirt store" },
+        { id: "7", name: "Nazz Collection" },
+        { id: "8", name: "Opera Cambi" },
+        { id: "9", name: "Rock n Romance" },
+        { id: "10", name: "Snide London" },
+      ]}
+    /> */}
         {/* <SelectInput
-          source="category"
-          choices={[
-            { id: "Apperal", name: "Gift" },
-            { id: "Health", name: "Fashion" },
-            { id: "3", name: "Accessories" },
-          ]}
-        /> */}
+      source="category"
+      choices={[
+        { id: "Apperal", name: "Gift" },
+        { id: "Health", name: "Fashion" },
+        { id: "3", name: "Accessories" },
+      ]}
+    /> */}
         <ReferenceInput label="Category" source="category" reference="posts">
           <SelectInput optionText="title" />
         </ReferenceInput>
-        <TextInput source="type" />
-        <TextInput source="title" />
+        <TextInput source="DealName" />
+        <RichTextInput source="Description" />
         <ImageInput source="image" label="title" accept="image/*"></ImageInput>
-        <TextInput source="couponscode" />
+        <TextInput source="price" />
+        <TextInput source="Discount" />
         <DateInput source="dealexpire" />
-        <TextInput source="dealURL" />
+        <TextInput source="dealURL" label="Deal URL" />
         <BooleanInput source="fetured" />
         <BooleanInput source="dealExclusive" />
         <BooleanInput source="Verified" />
@@ -73,4 +75,4 @@ const CouponCreate = (props) => {
   );
 };
 
-export default CouponCreate;
+export default DealCreate;

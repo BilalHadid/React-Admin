@@ -8,13 +8,16 @@ import {
   ImageField,
   ImageInput,
   DateInput,
+  ReferenceInput,
 } from "react-admin";
 const DiscussionEdit = (props) => {
   return (
     <Edit title="Edit a Forum & Categories" {...props}>
       <SimpleForm>
         <TextInput disabled source="id" />
-        <SelectInput source="user" choices={[{ id: "jhon", name: "Jhon" }]} />
+        <ReferenceInput label="users" source="user" reference="users">
+          <SelectInput optionText="name" />
+        </ReferenceInput>
         <SelectInput source="type" choices={[{ id: "", name: "" }]} />
 
         <TextInput source="title" />

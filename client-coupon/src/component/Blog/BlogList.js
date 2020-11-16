@@ -9,6 +9,7 @@ import {
   ImageField,
   RichTextField,
   DateField,
+  ReferenceField,
 } from "react-admin";
 import "../user.css";
 
@@ -25,8 +26,10 @@ const BlogList = (props) => {
         />
         <TextField source="title" />
         <RichTextField source="description" />
-        <TextField source="created" />
-
+        {/* <TextField source="created" /> */}
+        <ReferenceField label="users" source="created" reference="users">
+          <TextField source="name" />
+        </ReferenceField>
         <BooleanField source="status" />
         <DateField source="timestamp" />
         <EditButton basePath="/blog" />

@@ -4,22 +4,36 @@ import {
   SimpleForm,
   TextInput,
   BooleanInput,
-  SelectInput,
   ImageField,
   ImageInput,
   DateInput,
+  ReferenceInput,
+  SelectInput,
 } from "react-admin";
 const CouponEdit = (props) => {
   return (
     <Edit title="Edit a Forum & Categories" {...props}>
       <SimpleForm>
         <TextInput disabled source="id" />
-        <SelectInput source="user" choices={[{ id: "jhon", name: "Jhon" }]} />
-        <SelectInput
+        {/* <SelectInput source="user" choices={[{ id: "jhon", name: "Jhon" }]} /> */}
+        <ReferenceInput label="user" source="user" reference="users">
+          <SelectInput optionText="name" />
+        </ReferenceInput>
+        {/* <SelectInput
           source="ForumCategory"
           choices={[{ id: "coupon", name: "General Coupon" }]}
-        />
-        <SelectInput
+        /> */}
+        <ReferenceInput
+          label="Forum & Category"
+          source="ForumCategory"
+          reference="forumcategory"
+        >
+          <SelectInput optionText="title" />
+        </ReferenceInput>
+        <ReferenceInput label="store" source="store" reference="store">
+          <SelectInput optionText="title" />
+        </ReferenceInput>
+        {/* <SelectInput
           source="store"
           choices={[
             { id: "1", name: "BathroomWall T-shirt" },
@@ -33,16 +47,20 @@ const CouponEdit = (props) => {
             { id: "9", name: "Rock n Romance" },
             { id: "10", name: "Snide London" },
           ]}
-        />
-        <SelectInput
+        /> */}
+        {/* <SelectInput
           source="category"
           choices={[
             { id: "Apperal", name: "Gift" },
             { id: "Health", name: "Fashion" },
             { id: "3", name: "Accessories" },
           ]}
-        />
+        /> */}
+        <ReferenceInput label="Category" source="category" reference="posts">
+          <SelectInput optionText="title" />
+        </ReferenceInput>
 
+        <TextInput source="type" />
         <TextInput source="title" />
         <ImageInput source="image" accept="image/*"></ImageInput>
         <TextInput source="couponscode" />

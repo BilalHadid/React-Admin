@@ -13,7 +13,6 @@ import {
   TextInput,
   ReferenceField,
 } from "react-admin";
-
 import "../user.css";
 
 const PostFilter = (props) => (
@@ -25,20 +24,20 @@ const PostFilter = (props) => (
   </Filter>
 );
 
-const CouponList = (props) => {
+const DealList = (props) => {
   return (
     <List {...props} filters={<PostFilter />}>
       <Datagrid>
         <TextField source="id" />
         <ImageField source="image" className="thumbNail" />
-        <TextField source="type" />
+        {/* <TextField source="type" /> */}
         <ReferenceField
           label="Forum & Category"
           source="ForumCategory"
           reference="forumcategory"
           link={false}
         >
-          <TextField source="title" />
+          <TextField source="DealName" />
         </ReferenceField>
         {/* <TextField source="ForumCategory" /> */}
         <TextField source="title" />
@@ -69,11 +68,11 @@ const CouponList = (props) => {
         <BooleanField source="fetured" />
         <BooleanField source="Verified" />
         <BooleanField source="status" />
-        <EditButton basePath="/CouponDeal" />
-        <DeleteButton basePath="/CouponDeal" />
+        <EditButton basePath="/deals" />
+        <DeleteButton basePath="/deals" />
       </Datagrid>
     </List>
   );
 };
 
-export default CouponList;
+export default DealList;

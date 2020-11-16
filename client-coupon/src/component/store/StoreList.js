@@ -10,6 +10,7 @@ import {
   UrlField,
   Filter,
   SearchInput,
+  ReferenceField,
 } from "react-admin";
 
 import "../user.css";
@@ -28,7 +29,13 @@ const StoreList = (props) => {
         <TextField source="title" label="Title" />
 
         {/* <UrlField source="" /> */}
-        <TextField source="SelectNetwork" label="Networks" />
+        <ReferenceField
+          label="Networks"
+          source="SelectNetwork"
+          reference="networks"
+        >
+          <TextField source="name" label="Networks" />
+        </ReferenceField>
         <TextField source="Address" />
         <BooleanField source="featured" />
         <BooleanField source="status" />
