@@ -62,7 +62,21 @@ const DealEdit = (props) => {
         </ReferenceInput>
         <TextInput source="DealName" />
         <RichTextInput source="Description" />
-        <ImageInput source="image" label="title" accept="image/*"></ImageInput>
+        {/* <ImageInput source="image" label="title" accept="image/*"></ImageInput> */}
+        <ImageInput
+          source=""
+          label="title"
+          accept="image/png, image/jpg, image/jpeg"
+          maxSize={5000000}
+          placeholder={
+            <p>
+              Upload Image
+              <span>*File size should not exceed 5MB</span>
+            </p>
+          }
+        >
+          <ImageField source="image" title="images" />
+        </ImageInput>
         <TextInput source="price" />
         <TextInput source="Discount" />
         <DateInput source="dealexpire" />

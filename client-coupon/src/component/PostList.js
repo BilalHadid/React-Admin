@@ -9,11 +9,26 @@ import {
   BooleanField,
   Filter,
   SearchInput,
+  AutocompleteInput,
+  ReferenceInput,
+  TextInput,
 } from "react-admin";
 import "./user.css";
-const PostFilter = (props) => (
+const MyFilter = (props) => (
   <Filter {...props}>
-    <SearchInput source="title" alwaysOn />
+    {/* <ReferenceInput
+      label="Search"
+      source="title"
+      reference="posts"
+      sort={{ field: "title", order: "ASC" }}
+      filterToQuery={(searchText) => ({ title: searchText })}
+      allowEmpty={true}
+      alwaysOn
+    >
+      <AutocompleteInput optionText="title" />
+    </ReferenceInput> */}
+    <TextInput label="Search" source="q" alwaysOn />
+    <AutocompleteInput optionText="title" />
   </Filter>
 );
 
@@ -21,16 +36,18 @@ const PostList = (props) => {
   return (
     <List
       {...props}
-      filters={<PostFilter />}
-      sort={{ field: "id", order: "DESC" }}
+      filters={<MyFilter />}
+      perPage={25}
+      sort={{ field: "title", order: "DESC" }}
+      // sort={{ field: "id", order: "DESC" }}
     >
       <Datagrid>
         <TextField source="id" />
-        <ImageField source="images" title="images" className="thumbNail" />
+        <ImageField source="image" title="images" className="thumbNail" />
         <TextField source="title" />
         <BooleanField source="status" />
-        <EditButton basePath="/posts" />
-        <DeleteButton basePath="/posts" />
+        <EditButton basePath="/posts" label="Edit" />
+        <DeleteButton basePath="/posts" label="Delete" />
       </Datagrid>
     </List>
   );

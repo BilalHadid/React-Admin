@@ -6,7 +6,7 @@ import {
   ImageField,
   ImageInput,
 } from "react-admin";
-const SliderEdit = () => {
+const SliderEdit = (props) => {
   return (
     <Edit title="Edit a Forum & Categories" {...props}>
       <SimpleForm>
@@ -15,6 +15,7 @@ const SliderEdit = () => {
         <ImageInput source="image" label="desc" accept="">
           <ImageField source="image" src="url" title="desc" />
         </ImageInput>
+        <TextInput source="url" />
       </SimpleForm>
     </Edit>
   );

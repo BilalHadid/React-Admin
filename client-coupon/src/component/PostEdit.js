@@ -13,8 +13,22 @@ const PostEdit = (props) => {
     <Edit title="Edit a Post" {...props}>
       <SimpleForm>
         <TextInput disabled source="id" />
-        <ImageInput source="images" label="images" accept="">
+        {/* <ImageInput source="images" label="images" accept="">
           <ImageField source="images" title="images" />
+        </ImageInput> */}
+        <ImageInput
+          source=""
+          label="title"
+          accept="image/png, image/jpg, image/jpeg"
+          maxSize={5000000}
+          placeholder={
+            <p>
+              Upload Image
+              <span>*File size should not exceed 5MB</span>
+            </p>
+          }
+        >
+          <ImageField source="image" title="images" />
         </ImageInput>
         <TextInput source="title" />
         <TextInput multiline source="body" />

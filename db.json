@@ -1,65 +1,62 @@
 {
   "posts": [
     {
-      "id": "2",
-      "title": "Post Two",
-      "body": "This is the post body",
-      "status": true,
-      "images": {
-        "rawFile": {
-          "path": "Screenshot from 2020-11-13 20-19-08.png"
-        },
-        "images": "Screenshot from 2020-11-13 20-19-08.png"
-      }
-    },
-    {
       "id": "3",
       "title": "Post Three",
       "body": "This is the post body",
       "status": false,
-      "images": "https://static.thenounproject.com/png/836287-200.png"
+      "image": "https://static.thenounproject.com/png/836287-200.png"
     },
     {
       "id": "XXSedFV",
       "title": "Post Four",
       "body": "This is the body",
       "status": true,
-      "images": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
+      "image": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
     },
     {
       "title": "Post",
       "body": "this is post for",
       "status": true,
       "id": "Rbcf0hg",
-      "images": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
+      "image": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
     },
     {
       "title": "Alpha It ",
       "body": "Hello",
       "status": true,
       "id": "1qNAxic",
-      "images": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
+      "image": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
+    },
+    {
+      "rawFile": {
+        "path": "Screenshot from 2020-11-19 02-28-36.png"
+      },
+      "images": "Screenshot from 2020-11-19 02-28-36.png",
+      "id": "wSVVTl5",
+      "image": "blob:http://localhost:3000/705fae4c-cc34-4348-a23a-57e43165d689",
+      "title": "Dealer",
+      "body": "Ok let me in"
     }
   ],
   "users": [
     {
       "id": "1",
-      "name": "Bilal Hadid",
-      "email": "bilal@gmail.com",
-      "mobile": "03482091349",
-      "password": "123",
+      "name": "Hadid",
+      "email": "john@gmail.com",
+      "mobile": "0348202535",
+      "password": "abc",
       "administrator": true,
-      "image": [
-        {
-          "url": "https://s3.ivisa.com/website-assets/blog/id-photo2.jpg",
-          "desc": "First image"
-        }
-      ],
+      "image": "blob:http://localhost:3000/672de3cf-bbdb-4c47-a29e-83280baf3f3d",
       "gender": "male",
-      "birth": "22-12-2020",
-      "your Website": "https://image.flaticon.com",
-      "yourAddress": "",
-      "Biography": ""
+      "birth": "2020-11-05",
+      "your Website": "www.ideacoupon.com",
+      "yourAddress": "<p>dssaad</p>",
+      "Biography": "<p>dadafdf</p>",
+      "rawFile": {
+        "path": "Screenshot from 2020-10-22 23-55-13.png"
+      },
+      "images": "Screenshot from 2020-10-22 23-55-13.png"
     }
   ],
   "networks": [
@@ -145,6 +142,25 @@
       "featured": true,
       "id": "3",
       "leftTime": "2-30-20"
+    },
+    {
+      "rawFile": {
+        "path": "Screenshot from 2020-10-09 02-51-41.png"
+      },
+      "image": "blob:http://localhost:3000/53a4884c-5de0-4e12-b276-4bd2e3b85d5b",
+      "images": "Screenshot from 2020-10-09 02-51-41.png",
+      "name": "Hadid",
+      "title": "Alpha It ",
+      "url": "https://ideacoupons.com",
+      "Tracking Link": "https://ideacoupons.com",
+      "metatitle": "haddi",
+      "metaKeywords": "njjsbjsabj",
+      "metaDisc": "hjhjdgj",
+      "Description": "<p>hjbj</p>",
+      "SelectNetwork": "2",
+      "featured": true,
+      "status": true,
+      "id": "TP32AxN"
     }
   ],
   "forumcategory": [
@@ -161,6 +177,13 @@
       "detail": "helo",
       "status": true,
       "id": "eI9PVnr"
+    },
+    {
+      "type": "Deal",
+      "title": "Alpha It ",
+      "detail": "helo",
+      "status": true,
+      "id": "oymdK7b"
     }
   ],
   "deals": [
@@ -168,10 +191,10 @@
       "id": "1",
       "image": "https://ideacoupons.com/wp-content/uploads/2020/08/certified-watch-store.jpg",
       "Description": "coupon",
-      "ForumCategory": "1",
+      "ForumCategory": "eI9PVnr",
       "DealName": "30% off Over $185+...",
       "store": "1",
-      "category": "2",
+      "category": "XXSedFV",
       "user": "1",
       "price": "",
       "dealexpire": "2020-11-03",
@@ -180,7 +203,7 @@
       "Verified": true,
       "status": false,
       "dealExclusive": true,
-      "Discount": "welcome"
+      " ": "welcome"
     }
   ],
   "CouponDeal": [
@@ -191,10 +214,11 @@
       "ForumCategory": "1",
       "title": "30% off Over $185+...",
       "store": "1",
-      "category": "2",
+      "category": "Rbcf0hg",
       "user": "1",
       "couponcode": "Welcome",
       "dealexpire": "2020-11-03",
+      "dealStart": "2020-10-05",
       "dealURL": "https://ideacoupons.com/",
       "fetured": false,
       "Verified": true,
@@ -213,6 +237,7 @@
       "user": "1",
       "couponcode": "Welcome15",
       "dealexpire": "2020-11-03",
+      "dealStart": "2020-10-05",
       "dealURL": "https://ideacoupons.com/",
       "fetured": true,
       "Verified": true,
@@ -223,13 +248,14 @@
       "id": "3",
       "image": "https://ideacoupons.com/wp-content/uploads/2020/08/cbr.jpg",
       "type": "coupon",
-      "ForumCategory": "General Coupon",
+      "ForumCategory": "eI9PVnr",
       "title": "10% Off SiteWide + Free Shipping",
-      "store": "LaBante",
-      "category": "Accessories",
-      "user": "Jhon",
+      "store": "2",
+      "category": "1qNAxic",
+      "user": "1",
       "couponcode": "TourList",
       "dealexpire": "2020-11-03",
+      "dealStart": "2020-10-05",
       "dealURL": "https://ideacoupons.com/",
       "fetured": true,
       "Verified": true,
@@ -254,18 +280,18 @@
   "blog": [
     {
       "id": "1",
-      "image": [
-        {
-          "url": "https://149359887.v2.pressablecdn.com/wp-content/uploads/2017/11/sale.png",
-          "desc": "First image"
-        }
-      ],
-      "title": "Big Deal For Memorial Day",
-      "description": "MEMORIAL DAY BLOGKnock knock.....",
-      "created": "jhon",
-      "status": false,
-      "timestamp": "2020-03-20",
-      "tag": "HugeDiscount"
+      "image": "blob:http://localhost:3000/69aad423-d97a-4a6c-8063-60eaf06cbc8a",
+      "title": "Alpha It ",
+      "description": "<p>bhbb</p>",
+      "created": null,
+      "status": true,
+      "timestamp": "2020-11-19",
+      "tag": "coupon",
+      "rawFile": {
+        "path": "backImg.jpg"
+      },
+      "images": "backImg.jpg",
+      "user": "1"
     }
   ],
   "comment": [
@@ -299,32 +325,57 @@
   ],
   "homebanner": [
     {
-      "id": "1",
+      "rawFile": {
+        "path": "LogoShoeStore.jpg"
+      },
+      "image": "blob:http://localhost:3000/d1913981-f26e-4a1b-aec7-06e651e1c185",
+      "images": "LogoShoeStore.jpg",
       "BannerName": "HomeSlider1",
-      "BannerHeding": "BEST DEALS AND COUPONS AT ideacoupons",
-      "BannerSubheading": "",
-      "overlay": true,
-      "Parallex": true,
-      "image": [
-        {
-          "url": "https://149359887.v2.pressablecdn.com/wp-content/uploads/2017/11/sale.png",
-          "desc": "First image"
-        }
-      ]
+      "BannerHeding": "BEST DEALS AND COUPONS AT PRICECUTOFF",
+      "id": "9bV9bdU"
     }
   ],
   "slider": [
     {
       "id": "1",
-      "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/agency-picture-slideshow-768x404.png"
+      "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/agency-picture-slideshow-768x404.png",
+      "url": "https://blog.bannersnack.com/wp-content/uploads/2018/11/agency-picture-slideshow-768x404.png"
     },
     {
       "id": "2",
-      "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/omega-responsive-image-slider-1024x566.png"
+      "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/omega-responsive-image-slider-1024x566.png",
+      "url": "https://blog.bannersnack.com/wp-content/uploads/2018/11/omega-responsive-image-slider-1024x566.png"
     },
     {
       "id": "3",
-      "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/interior-design-slideshow-768x420.png"
+      "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/interior-design-slideshow-768x420.png",
+      "url": "https://blog.bannersnack.com/wp-content/uploads/2018/11/interior-design-slideshow-768x420.png"
+    },
+    {
+      "url": "https://media.gettyimages.com/photos/wazir-khan-mosque-lahore-punjab-pakistan-picture-id637623678?s=612x612",
+      "id": "gVw_8Xr"
+    }
+  ],
+  "country": [
+    {
+      "id": "1",
+      "Name": "UK"
+    },
+    {
+      "id": "2",
+      "Name": "US"
+    },
+    {
+      "id": "3",
+      "Name": "Germany"
+    },
+    {
+      "id": "4",
+      "Name": "Brazil"
+    },
+    {
+      "id": "5",
+      "Name": "NewZealand"
     }
   ]
 }

@@ -44,10 +44,23 @@ const StoreEdit = (props) => {
           </ReferenceInput>
         </Card>
         <DateInput source="leftTime" />
-        <ImageInput source="image" label="desc" accept="">
+        {/* <ImageInput source="image" label="desc" accept="">
           <ImageField source="image" src="url" title="desc" />
+        </ImageInput> */}
+        <ImageInput
+          source=""
+          label="title"
+          accept="image/png, image/jpg, image/jpeg"
+          maxSize={5000000}
+          placeholder={
+            <p>
+              Upload Image
+              <span>*File size should not exceed 5MB</span>
+            </p>
+          }
+        >
+          <ImageField source="image" title="images" />
         </ImageInput>
-
         <BooleanInput source="featured" />
         <BooleanInput source="status" />
       </SimpleForm>

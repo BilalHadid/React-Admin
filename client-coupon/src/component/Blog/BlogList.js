@@ -18,16 +18,11 @@ const BlogList = (props) => {
     <List {...props}>
       <Datagrid>
         <TextField source="id" />
-        <ImageField
-          source="image"
-          src="url"
-          title="desc"
-          className="thumbNail"
-        />
+        <ImageField source="image" title="images" className="thumbNail" />
         <TextField source="title" />
         <RichTextField source="description" />
         {/* <TextField source="created" /> */}
-        <ReferenceField label="users" source="created" reference="users">
+        <ReferenceField label="users" source="user" reference="users">
           <TextField source="name" />
         </ReferenceField>
         <BooleanField source="status" />

@@ -29,7 +29,8 @@ const DealList = (props) => {
     <List {...props} filters={<PostFilter />}>
       <Datagrid>
         <TextField source="id" />
-        <ImageField source="image" className="thumbNail" />
+        {/* <ImageField source="image" className="thumbNail" /> */}
+        <ImageField source="image" label="images" className="thumbNail" />
         {/* <TextField source="type" /> */}
         <ReferenceField
           label="Forum & Category"
@@ -37,10 +38,10 @@ const DealList = (props) => {
           reference="forumcategory"
           link={false}
         >
-          <TextField source="DealName" />
+          <TextField source="title" />
         </ReferenceField>
         {/* <TextField source="ForumCategory" /> */}
-        <TextField source="title" />
+        {/* <TextField source="title" /> */}
         <ReferenceField
           label="store"
           source="store"

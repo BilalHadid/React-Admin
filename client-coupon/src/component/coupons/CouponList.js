@@ -30,7 +30,7 @@ const CouponList = (props) => {
     <List {...props} filters={<PostFilter />}>
       <Datagrid>
         <TextField source="id" />
-        <ImageField source="image" className="thumbNail" />
+        <ImageField source="image" label="images" className="thumbNail" />
         <TextField source="type" />
         <ReferenceField
           label="Forum & Category"

@@ -1,5 +1,11 @@
 import React from "react";
-import { List, Datagrid, TextField, ImageField, ImageInput } from "react-admin";
+import {
+  List,
+  Datagrid,
+  TextField,
+  ImageField,
+  DeleteButton,
+} from "react-admin";
 import "../user.css";
 const HomeList = (props) => {
   return (
@@ -10,12 +16,9 @@ const HomeList = (props) => {
         <TextField source="BannerName" />
         <TextField source="BannerHeding" />
         <TextField source="BannerSubheading" />
-        <ImageField
-          source="image"
-          src="url"
-          title="desc"
-          className="thumbNail"
-        />
+        <ImageField source="image" title="images" className="thumbNail" />
+
+        <DeleteButton basePath="/homebanner" />
       </Datagrid>
     </List>
   );

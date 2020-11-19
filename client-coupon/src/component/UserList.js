@@ -33,12 +33,7 @@ const UserList = (props) => {
         <TextField source="mobile" />
         <TextField source="password" />
         <BooleanField source="administrator" />
-        <ImageField
-          source="image"
-          src="url"
-          title="desc"
-          className="thumbNailView"
-        />
+        <ImageField source="image" title="images" className="thumbNailView" />
         <TextField source="gender" />
         <DateField source="birth" />
         <TextField source="your Website" />
