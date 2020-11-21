@@ -19,9 +19,8 @@ const StoreCreate = (props) => {
   return (
     <Create title="Create a Event" {...props}>
       <SimpleForm>
-        <TextInput source="name" />
-
         <TextInput source="title" />
+        <TextInput source="name" />
         <TextInput source="url" />
         <TextInput source="Tracking Link" />
         <TextInput source="metatitle" />

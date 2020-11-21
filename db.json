@@ -30,13 +30,14 @@
     },
     {
       "rawFile": {
-        "path": "Screenshot from 2020-11-19 02-28-36.png"
+        "path": "Screenshot from 2020-11-19 02-28-43.png"
       },
-      "images": "Screenshot from 2020-11-19 02-28-36.png",
+      "images": "Screenshot from 2020-11-19 02-28-43.png",
       "id": "wSVVTl5",
-      "image": "blob:http://localhost:3000/705fae4c-cc34-4348-a23a-57e43165d689",
-      "title": "Dealer",
-      "body": "Ok let me in"
+      "image": "blob:http://localhost:3000/31b65ef2-0147-48af-a18d-8d7ec5222995",
+      "title": "Art",
+      "body": "Body",
+      "status": true
     }
   ],
   "users": [
@@ -95,7 +96,6 @@
   ],
   "store": [
     {
-      "name": "Hadid",
       "title": "Aproved Vitamins",
       "url": "https://ideacoupons.com",
       "Tracking Link": "https://ideacoupons.com",
@@ -108,11 +108,11 @@
       "image": "https://pricecutoff.com/public/images/store/1585918856approvedvitamins.png",
       "featured": true,
       "id": "1",
+      "name": "Aproved Vitamins",
       "leftTime": "2-30-20",
       "status": true
     },
     {
-      "name": "Hadid",
       "title": "Ammie Skin Care ",
       "url": "https://ideacoupons.com",
       "Tracking Link": "https://ideacoupons.com",
@@ -124,11 +124,11 @@
       "Description": "Shahr e Faisal,Karachi",
       "image": "https://pricecutoff.com/public/images/store/1585918265amieskincare.png",
       "featured": true,
+      "name": "Ammie Skin Care ",
       "id": "2",
       "leftTime": "2-30-20"
     },
     {
-      "name": "Hadid",
       "title": "Shoe Embassy  ",
       "url": "https://ideacoupons.com",
       "Tracking Link": "https://ideacoupons.com",
@@ -141,6 +141,7 @@
       "image": "https://pricecutoff.com/public/images/store/1585737922shoe%20embassy.png",
       "featured": true,
       "id": "3",
+      "name": "Hadid",
       "leftTime": "2-30-20"
     },
     {
@@ -149,7 +150,7 @@
       },
       "image": "blob:http://localhost:3000/53a4884c-5de0-4e12-b276-4bd2e3b85d5b",
       "images": "Screenshot from 2020-10-09 02-51-41.png",
-      "name": "Hadid",
+      "name": "ShoeEmbassy",
       "title": "Alpha It ",
       "url": "https://ideacoupons.com",
       "Tracking Link": "https://ideacoupons.com",
@@ -352,6 +353,7 @@
       "url": "https://blog.bannersnack.com/wp-content/uploads/2018/11/interior-design-slideshow-768x420.png"
     },
     {
+      "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/interior-design-slideshow-768x420.png",
       "url": "https://media.gettyimages.com/photos/wazir-khan-mosque-lahore-punjab-pakistan-picture-id637623678?s=612x612",
       "id": "gVw_8Xr"
     }

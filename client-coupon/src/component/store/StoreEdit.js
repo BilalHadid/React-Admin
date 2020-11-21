@@ -18,9 +18,9 @@ const StoreEdit = (props) => {
     <Edit title="Edit a Event" {...props}>
       <SimpleForm>
         <TextInput disabled source="id" />
-        <TextInput source="name" />
 
         <TextInput source="title" />
+        <TextInput source="name" />
         <TextInput source="url" />
         <TextInput source="Tracking Link" />
         <TextInput source="metatitle" />
