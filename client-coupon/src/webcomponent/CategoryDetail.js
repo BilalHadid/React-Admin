@@ -4,6 +4,7 @@ import axios from "axios";
 import Header from "./Header";
 import Footer from "./footer";
 import FetureCoupons from "./FeturedCoupons";
+import CategCoupon from "./CategCoupon";
 
 export const CategoryDetail = ({ pass }) => {
   const [post, setPost] = useState([]);
@@ -31,7 +32,7 @@ export const CategoryDetail = ({ pass }) => {
       <Header />
       <h1>{Title}</h1>
       <div>
-        <FetureCoupons />
+        <CategCoupon />
       </div>
       <div
         style={{
