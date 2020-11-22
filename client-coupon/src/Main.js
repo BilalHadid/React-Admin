@@ -1,5 +1,5 @@
 import React from "react";
-import { Admin, Resource } from "react-admin";
+import { Admin, Resource, fetchUtils } from "react-admin";
 import restProvider from "ra-data-simple-rest";
 import PostList from "./component/PostList";
 import PostCreate from "./component/PostCreate";
@@ -60,9 +60,19 @@ import CountryList from "./component/Country/CountryList";
 import CountryEdit from "./component/Country/CountryEdit";
 import CountryCreate from "./component/Country/CountryCreate";
 
+const httpClient = (url, options = {}) => {
+  if (!options.headers) {
+    options.headers = new Headers({ Accept: "application/json" });
+  }
+  const token = localStorage.getItem("token");
+  options.headers.set("Authorization", `Bearer ${token}`);
+  return fetchUtils.fetchJson(url, options);
+};
+
 function Main() {
   return (
     <Admin
+      title="Idea Coupon"
       authProvider={authProvider}
       dashboard={Dashbord}
       dataProvider={restProvider("http://localhost:3000")}

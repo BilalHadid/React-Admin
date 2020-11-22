@@ -27,8 +27,12 @@ const MainCategories = () => {
           return (
             <div>
               <Card className="catCard">
-                {/* <i class="fa fa-address-book" aria-hidden="true"></i> */}
-                <img src={post.image} alt="bilal" />
+                <i
+                  style={{ color: "#ff444a", fontSize: "35px" }}
+                  className={post.icon}
+                  aria-hidden="true"
+                ></i>
+                {/* <img src={post.image} alt="bilal" /> */}
               </Card>
 
               <Link

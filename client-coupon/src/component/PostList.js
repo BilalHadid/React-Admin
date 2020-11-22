@@ -12,39 +12,47 @@ import {
   AutocompleteInput,
   ReferenceInput,
   TextInput,
+  NullableBooleanInput,
 } from "react-admin";
 import "./user.css";
-const MyFilter = (props) => (
+
+const PostFilter = (props) => (
   <Filter {...props}>
-    {/* <ReferenceInput
-      label="Search"
-      source="title"
-      reference="posts"
-      sort={{ field: "title", order: "ASC" }}
-      filterToQuery={(searchText) => ({ title: searchText })}
-      allowEmpty={true}
-      alwaysOn
-    >
-      <AutocompleteInput optionText="title" />
-    </ReferenceInput> */}
     <TextInput label="Search" source="q" alwaysOn />
-    <AutocompleteInput optionText="title" />
+    <TextInput source="title" />
   </Filter>
 );
+// const MyFilter = (props) => (
+//   <Filter {...props}>
+//     {/* <ReferenceInput
+//       label="Search"
+//       source="title"
+//       reference="posts"
+//       sort={{ field: "title", order: "ASC" }}
+//       filterToQuery={(searchText) => ({ title: searchText })}
+//       allowEmpty={true}
+//       alwaysOn
+//     >
+//       <AutocompleteInput optionText="title" />
+//     </ReferenceInput> */}
+//     <TextInput label="Search" source="q" alwaysOn />
+//     <AutocompleteInput optionText="title" />
+//   </Filter>
+// );
 
 const PostList = (props) => {
   return (
     <List
       {...props}
-      filters={<MyFilter />}
-      perPage={25}
-      sort={{ field: "title", order: "DESC" }}
+      filters={<PostFilter />}
       // sort={{ field: "id", order: "DESC" }}
     >
       <Datagrid>
         <TextField source="id" />
-        <ImageField source="image" title="images" className="thumbNail" />
+        {/* <ImageField source="image" title="images" className="thumbNail" /> */}
         <TextField source="title" />
+        <TextField source="icon" />
+
         <BooleanField source="status" />
         <EditButton basePath="/posts" label="Edit" />
         <DeleteButton basePath="/posts" label="Delete" />

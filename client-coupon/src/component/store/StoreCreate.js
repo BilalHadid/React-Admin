@@ -27,7 +27,7 @@ const StoreCreate = (props) => {
         <TextInput source="metaKeywords" />
         <TextInput source="metaDisc" />
         <RichTextInput source="Description" />
-        <Card className="Rasdio">
+        <div className="Rasdio" style={{ width: "20%" }}>
           {/* <RadioButtonGroupInput
             source="SelectNetwork"
             choices={[
@@ -40,9 +40,9 @@ const StoreCreate = (props) => {
             source="SelectNetwork"
             reference="networks"
           >
-            <SelectInput optionText="name" />
+            <RadioButtonGroupInput optionText="name" />
           </ReferenceInput>
-        </Card>
+        </div>
         <DateInput source="leftTime" />
         {/* <ImageInput source="image" label="desc" accept="">
           <ImageField source="image" src="url" title="desc" />

@@ -5,39 +5,53 @@
       "title": "Post Three",
       "body": "This is the post body",
       "status": false,
-      "image": "https://static.thenounproject.com/png/836287-200.png"
+      "icon": "fa fa-intersex"
     },
     {
       "id": "XXSedFV",
       "title": "Post Four",
       "body": "This is the body",
       "status": true,
-      "image": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
+      "icon": "fa fa-intersex"
     },
     {
       "title": "Post",
       "body": "this is post for",
       "status": true,
       "id": "Rbcf0hg",
-      "image": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
+      "icon": "fa fa-intersex"
     },
     {
       "title": "Alpha It ",
       "body": "Hello",
       "status": true,
       "id": "1qNAxic",
-      "image": "https://img.icons8.com/pastel-glyph/2x/whatsapp.png"
+      "icon": "fa fa-intersex"
     },
     {
-      "rawFile": {
-        "path": "Screenshot from 2020-11-19 02-28-43.png"
-      },
-      "images": "Screenshot from 2020-11-19 02-28-43.png",
-      "id": "wSVVTl5",
-      "image": "blob:http://localhost:3000/31b65ef2-0147-48af-a18d-8d7ec5222995",
-      "title": "Art",
+      "title": "Alpha It ",
+      "body": "Hello World",
+      "id": "njv_jFC",
+      "status": false
+    },
+    {
+      "icon": "fa fa-camera",
+      "title": "hello",
+      "body": "body",
+      "id": "7XOEyEX"
+    },
+    {
+      "icon": "fa fa-file-picture-o ",
+      "title": "Art & Design",
+      "body": "Hello",
+      "status": true,
+      "id": "dzeFh8g"
+    },
+    {
+      "icon": "fa fa-heart",
+      "title": "Helo",
       "body": "Body",
-      "status": true
+      "id": "dBzy0UM"
     }
   ],
   "users": [
@@ -58,6 +72,62 @@
         "path": "Screenshot from 2020-10-22 23-55-13.png"
       },
       "images": "Screenshot from 2020-10-22 23-55-13.png"
+    },
+    {
+      "password": "abc",
+      "id": "A2sTPJR"
+    },
+    {
+      "password": "abc",
+      "id": "741kV0C"
+    },
+    {
+      "password": "abc",
+      "id": "XHNdj-A"
+    },
+    {
+      "password": "abc",
+      "id": "QwkfRzf"
+    },
+    {
+      "password": "jhjhj",
+      "id": "fu7H1Wh"
+    },
+    {
+      "password": "abc",
+      "id": "Mr_91Ay"
+    },
+    {
+      "password": "jhjhj",
+      "id": "WZkZ0lB"
+    },
+    {
+      "password": "kjkj",
+      "id": "luFHa5C"
+    },
+    {
+      "password": "hsn",
+      "id": "7G6L-ti"
+    },
+    {
+      "password": "abc",
+      "id": "q5q7UYf"
+    },
+    {
+      "password": "hjhjh",
+      "id": "P61i3mf"
+    },
+    {
+      "password": "abc",
+      "id": "yOnXQgQ"
+    },
+    {
+      "password": "abc",
+      "id": "Nkx40aA"
+    },
+    {
+      "password": "abc",
+      "id": "B31efiU"
     }
   ],
   "networks": [
@@ -346,11 +416,6 @@
       "id": "2",
       "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/omega-responsive-image-slider-1024x566.png",
       "url": "https://blog.bannersnack.com/wp-content/uploads/2018/11/omega-responsive-image-slider-1024x566.png"
-    },
-    {
-      "id": "3",
-      "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/interior-design-slideshow-768x420.png",
-      "url": "https://blog.bannersnack.com/wp-content/uploads/2018/11/interior-design-slideshow-768x420.png"
     },
     {
       "image": "https://blog.bannersnack.com/wp-content/uploads/2018/11/interior-design-slideshow-768x420.png",
