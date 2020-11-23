@@ -9,7 +9,7 @@ import {
   DateInput,
   RadioButtonGroupInput,
   ReferenceInput,
-  SelectInput,
+  // SelectInput,
 } from "react-admin";
 import { Card } from "@material-ui/core";
 import RichTextInput from "ra-input-rich-text";

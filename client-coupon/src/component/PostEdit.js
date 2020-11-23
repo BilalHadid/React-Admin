@@ -4,8 +4,6 @@ import {
   SimpleForm,
   TextInput,
   BooleanInput,
-  ImageField,
-  ImageInput,
   // IconPicker
 } from "react-admin";
 import IconPickers from "./IconPicker";

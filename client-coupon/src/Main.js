@@ -60,15 +60,6 @@ import CountryList from "./component/Country/CountryList";
 import CountryEdit from "./component/Country/CountryEdit";
 import CountryCreate from "./component/Country/CountryCreate";
 
-const httpClient = (url, options = {}) => {
-  if (!options.headers) {
-    options.headers = new Headers({ Accept: "application/json" });
-  }
-  const token = localStorage.getItem("token");
-  options.headers.set("Authorization", `Bearer ${token}`);
-  return fetchUtils.fetchJson(url, options);
-};
-
 function Main() {
   return (
     <Admin

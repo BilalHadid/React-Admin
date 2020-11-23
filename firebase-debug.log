@@ -1,0 +1,40 @@
+[debug] [2020-11-23T20:34:29.768Z] ----------------------------------------------------------------------
+[debug] [2020-11-23T20:34:29.775Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-11-23T20:34:29.777Z] CLI Version:   8.9.0
+[debug] [2020-11-23T20:34:29.778Z] Platform:      linux
+[debug] [2020-11-23T20:34:29.778Z] Node Version:  v10.19.0
+[debug] [2020-11-23T20:34:29.779Z] Time:          Tue Nov 24 2020 01:34:29 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-11-23T20:34:29.780Z] ----------------------------------------------------------------------
+[debug] [2020-11-23T20:34:29.780Z] 
+[debug] [2020-11-23T20:34:29.805Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-23T20:34:29.806Z] > authorizing via signed-in user
+[debug] [2020-11-23T20:34:29.807Z] [iam] checking project ideacoupon for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-23T20:34:29.826Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ideacoupon:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-23T20:34:31.568Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 23 Nov 2020 20:34:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1364","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-23T20:34:31.573Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project ideacoupon:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2020-11-23T20:34:31.577Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ideacoupon  
+ 
+[debug] [2020-11-23T20:34:32.106Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 23 Nov 2020 20:34:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-23T20:34:32.106Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2020-11-23T20:34:32.110Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-11-23T20:34:32.505Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:41:35)
+    at Request.self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:286:20)
+    at IncomingMessage.emit (events.js:203:15)
+    at IncomingMessage.EventEmitter.emit (domain.js:448:20)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Failed to get Firebase project ideacoupon. Please make sure the project exists and your account has permission to access it.

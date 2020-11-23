@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Create,
-  SimpleForm,
-  TextInput,
-  BooleanInput,
-  ImageInput,
-  ImageField,
-  SelectInput,
-} from "react-admin";
+import { Create, SimpleForm, TextInput, BooleanInput } from "react-admin";
 import IconPickers from "./IconPicker";
 
 const PostCreate = (props) => {

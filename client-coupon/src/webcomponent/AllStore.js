@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Card } from "@material-ui/core";
+// import { Card } from "@material-ui/core";
 import { Link } from "react-router-dom";
 const AllStore = () => {
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
   const [alphabel, setAlphabet] = useState("");
   //   const onSearchInputChange = (e) => {
   //     setSearch(e.target.value);

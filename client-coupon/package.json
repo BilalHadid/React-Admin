@@ -1,6 +1,7 @@
 {
   "name": "client-coupon",
   "proxy": "http://localhost:5000",
+  "homepage": "https://ideacoupon.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,7 +43,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serv": "\"npm run server\" \"npm run client\""
   },
   "eslintConfig": {
     "extends": [

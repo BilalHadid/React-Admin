@@ -6,7 +6,8 @@
   "scripts": {
     "server": "json-server --watch db.json --port 5000 --middlewares ./range.js",
     "client": "npm start --prefix client-coupon",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run server && npm run client"
   },
   "keywords": [],
   "author": "",
