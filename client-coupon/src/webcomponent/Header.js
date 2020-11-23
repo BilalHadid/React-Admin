@@ -7,6 +7,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import PinterestIcon from "@material-ui/icons/Pinterest";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { Link } from "react-router-dom";
+import Search from "./search";
 
 const Header = () => {
   return (
@@ -82,10 +83,11 @@ const Header = () => {
         </div>
         <div class="search-container">
           <form>
-            <input type="text" placeholder="Search.." name="search" />
+            {/* <input type="text" placeholder="Search.." name="search" />
             <button type="submit">
               <i class="fa fa-search"></i>
-            </button>
+            </button> */}
+            <Search />
           </form>
         </div>
       </div>
@@ -122,7 +124,7 @@ const Header = () => {
                   <Link to="/blogs">Blog</Link>
                 </li>
                 <li>
-                  <Link to="/admin">Admin</Link>
+                  <Link to="/admin#/login">Login</Link>
                 </li>
               </ul>
             </nav>

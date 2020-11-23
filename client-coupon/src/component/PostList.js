@@ -1,4 +1,5 @@
 import React from "react";
+import { cloneElement, useMemo } from "react";
 import {
   List,
   Datagrid,
@@ -12,14 +13,61 @@ import {
   AutocompleteInput,
   ReferenceInput,
   TextInput,
-  NullableBooleanInput,
+  useListContext,
+  TopToolbar,
+  ExportButton,
+  Button,
+  sanitizeListRestProps,
+  CreateButton,
+  downloadCSV,
 } from "react-admin";
 import "./user.css";
+import jsonExport from "jsonexport/dist";
+import PropTypes from "prop-types";
+import IconEvent from "@material-ui/icons/Event";
+// import { Card, CardContent } from "@material-ui/core";
+
+const ListActions = (props) => {
+  const { className, exporter, filters, maxResults, ...rest } = props;
+  const {
+    currentSort,
+    resource,
+    displayedFilters,
+    filterValues,
+    hasCreate,
+    basePath,
+    selectedIds,
+    showFilter,
+    total,
+  } = useListContext();
+  return (
+    <TopToolbar className={className} {...sanitizeListRestProps(rest)}>
+      {filters &&
+        cloneElement(filters, {
+          resource,
+          showFilter,
+          displayedFilters,
+          filterValues,
+          context: "button",
+        })}
+      <CreateButton basePath={basePath} />
+      <ExportButton
+        disabled={total === 0}
+        resource={resource}
+        sort={currentSort}
+        filterValues={filterValues}
+        maxResults={maxResults}
+      />
+      {/* Add your custom actions */}
+    </TopToolbar>
+  );
+};
 
 const PostFilter = (props) => (
   <Filter {...props}>
-    <TextInput label="Search" source="q" alwaysOn />
-    <TextInput source="title" />
+    <SearchInput source="q" alwaysOn />
+    <TextInput source="title" defaultValue="Title" />
+    {/* <QuickFilter label="Title" source="title" defaultValue /> */}
   </Filter>
 );
 // const MyFilter = (props) => (
@@ -45,12 +93,15 @@ const PostList = (props) => {
     <List
       {...props}
       filters={<PostFilter />}
-      // sort={{ field: "id", order: "DESC" }}
+      title="Categories"
+      sort={{ field: "id", order: "DESC" }}
+      actions={<ListActions />}
+      bulkActions={false}
     >
       <Datagrid>
         <TextField source="id" />
         {/* <ImageField source="image" title="images" className="thumbNail" /> */}
-        <TextField source="title" />
+        <TextField source="title" sortBy="ASC" />
         <TextField source="icon" />
 
         <BooleanField source="status" />

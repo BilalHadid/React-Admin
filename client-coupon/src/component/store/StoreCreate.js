@@ -47,6 +47,8 @@ const StoreCreate = (props) => {
         {/* <ImageInput source="image" label="desc" accept="">
           <ImageField source="image" src="url" title="desc" />
         </ImageInput> */}
+        <TextInput source="image" label="Enter Url for Image" />
+        <span>OR</span>
         <ImageInput
           source=""
           label="title"

@@ -5,6 +5,7 @@ import Header from "./Header";
 import Footer from "./footer";
 import FetureCoupons from "./FeturedCoupons";
 import CategCoupon from "./CategCoupon";
+import CategDeal from "./CategDeal";
 
 export const CategoryDetail = ({ pass }) => {
   const [post, setPost] = useState([]);
@@ -33,6 +34,7 @@ export const CategoryDetail = ({ pass }) => {
       <h1>{Title}</h1>
       <div>
         <CategCoupon />
+        <CategDeal />
       </div>
       <div
         style={{

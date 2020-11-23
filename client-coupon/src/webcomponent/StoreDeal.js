@@ -41,8 +41,7 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: "100%",
   },
 }));
-
-const StoreCoupons = () => {
+const StoreDeal = () => {
   const classes = useStyles();
   const [post, setPost] = useState([]);
   const [value, setValue] = useState("");
@@ -50,7 +49,7 @@ const StoreCoupons = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/CouponDeal")
+      .get("http://localhost:5000/deals")
       .then((res) => {
         console.log(res.data);
         setPost(res.data);
@@ -60,48 +59,6 @@ const StoreCoupons = () => {
       });
   });
   let { id } = useParams();
-  console.log(id);
-  let store = post.map((post) => {
-    return (
-      <div>
-        <h2>
-          <span>{post.store == id ? `${post.title}` : ``}</span>
-        </h2>
-      </div>
-    );
-  });
-  let imager = post.map((post) => {
-    return (
-      <div>
-        <img
-          className={classes.img}
-          src={post.store == id ? `${post.image}` : ``}
-          alt=""
-        />
-      </div>
-    );
-  });
-  let descript = post.map((post) => {
-    return (
-      <div>
-        <span>{post.store == id ? `${post.type}` : ``}</span>
-      </div>
-    );
-  });
-  let code = post.map((post) => {
-    return (
-      <div>
-        <span>{post.store == id ? `${post.couponscode}` : ``}</span>
-      </div>
-    );
-  });
-  let buttons = post.map((post) => {
-    return (
-      <div>
-        <span>{post.store == id ? `Get Code` : ``}</span>
-      </div>
-    );
-  });
   return (
     <div>
       {post.map((post) => {
@@ -120,10 +77,13 @@ const StoreCoupons = () => {
                       <Grid item xs container direction="column" spacing={2}>
                         <Grid item xs>
                           <Typography gutterBottom variant="subtitle1">
-                            {post.title}
+                            {post.DealName}
                           </Typography>
                           <Typography variant="p" gutterBottom>
-                            {post.type}
+                            {post.Description}
+                          </Typography>
+                          <Typography variant="p" gutterBottom>
+                            starting {post.DealName} : {post.price}
                           </Typography>
                         </Grid>
                       </Grid>
@@ -133,7 +93,7 @@ const StoreCoupons = () => {
                             <a target="_blank" href={post.dealURL}>
                               <button className="glow-on-hover  button">
                                 {" "}
-                                Get Code{" "}
+                                Get Deal{" "}
                               </button>
                             </a>
                           }
@@ -145,7 +105,7 @@ const StoreCoupons = () => {
                               <button className="close" onClick={close}>
                                 &times;
                               </button>
-                              <div className="header"> {post.title} </div>
+                              <div className="header"> {post.DealName} </div>
                               <div className="content">
                                 <center>
                                   {" "}
@@ -156,41 +116,20 @@ const StoreCoupons = () => {
                                   />
                                 </center>
                                 <center>
-                                  <span
+                                  <a
+                                    href={post.dealURL}
                                     style={{
                                       fontSize: "20px",
                                       color: "#ea4c89",
                                     }}
                                   >
                                     Visit Store
-                                  </span>
+                                  </a>
                                 </center>
                                 <br />
-                                <center>{post.type}</center>
-                                <center>Copy and Paste Code At Checkout</center>
+                                <center>{post.Description}</center>
                               </div>
                               <div className="actions">
-                                <input
-                                  className="input"
-                                  value={post.couponscode}
-                                  onChange={() => setCopy(value)}
-                                />
-
-                                <CopyToClipboard
-                                  text={value}
-                                  onCopy={() => setValue(value)}
-                                >
-                                  <button
-                                    className="button"
-                                    onClick={() => setCopy(true)}
-                                  >
-                                    Copy Code
-                                  </button>
-                                </CopyToClipboard>
-
-                                {copy ? (
-                                  <span style={{ color: "red" }}>Copied.</span>
-                                ) : null}
                                 {/* <button
                                className="button"
                                onClick={() => {
@@ -217,4 +156,4 @@ const StoreCoupons = () => {
   );
 };
 
-export default StoreCoupons;
+export default StoreDeal;

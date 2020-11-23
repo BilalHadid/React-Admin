@@ -54,15 +54,16 @@ import {
   AUTH_LOGIN,
   AUTH_LOGOUT,
   AUTH_ERROR,
+  AUTH_CHECK,
   AUTH_GET_PERMISSIONS,
 } from "react-admin";
 
 export default (type, params) => {
   if (type === AUTH_LOGIN) {
-    const { username, password } = params;
+    const { name, password } = params;
     const request = new Request("http://localhost:3000/users", {
-      method: "POST",
-      body: JSON.stringify({ username, password }),
+      method: "GET",
+      users: JSON.stringify({ name, password }),
       headers: new Headers({ "Content-Type": "application/json" }),
     });
     return fetch(request)
@@ -74,7 +75,6 @@ export default (type, params) => {
       })
       .then(({ token }) => {
         localStorage.setItem("token", token);
-        localStorage.setItem("role", decodedToken.role);
       });
   }
   if (type === AUTH_LOGOUT) {

@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import FeturedCoupons from "./FeturedCoupons";
 import StoreCoupons from "./StoreCoupons";
+import StoreDeal from "./StoreDeal";
 const StoreDetail = ({ pass }) => {
   const [post, setPost] = useState([]);
 
@@ -34,6 +35,7 @@ const StoreDetail = ({ pass }) => {
         <h1>{poster}</h1>
         <div>
           <StoreCoupons />
+          <StoreDeal />
         </div>
         <div
           style={{

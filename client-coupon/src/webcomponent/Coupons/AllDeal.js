@@ -12,7 +12,6 @@ import "../../App.css";
 import "reactjs-popup/dist/index.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Popup from "reactjs-popup";
-import AllDeal from "./AllDeal";
 
 const useStyles = makeStyles({
   root: {
@@ -25,14 +24,14 @@ const useStyles = makeStyles({
   },
 });
 
-const AllCoupons = () => {
+const AllDeal = () => {
   const [value, setValue] = useState("");
   const [copy, setCopy] = useState(false);
   const classes = useStyles();
   const [post, setPost] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/CouponDeal")
+      .get("http://localhost:5000/deals")
       .then((res) => {
         setPost(res.data);
       })
@@ -41,11 +40,6 @@ const AllCoupons = () => {
 
   return (
     <div>
-      <div>
-        <h1 class="second">
-          <span>All Coupons</span>
-        </h1>
-      </div>
       <div className="iconBox">
         {post.map((post) => {
           return (
@@ -60,14 +54,14 @@ const AllCoupons = () => {
                 </CardMedia>
                 <CardContent>
                   <Typography gutterBottom component="h2">
-                    {post.title}
+                    {post.DealName}
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    {post.type}
+                    {post.Description}
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -77,7 +71,7 @@ const AllCoupons = () => {
                     <a target="_blank" href={post.dealURL}>
                       <button className="glow-on-hover  button">
                         {" "}
-                        Get Code{" "}
+                        Get Deal{" "}
                       </button>
                     </a>
                   }
@@ -146,10 +140,9 @@ const AllCoupons = () => {
             </Card>
           );
         })}
-        <AllDeal />
       </div>
     </div>
   );
 };
 
-export default AllCoupons;
+export default AllDeal;
