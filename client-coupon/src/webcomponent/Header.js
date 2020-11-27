@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import avator from "./logo.png";
 import "../App.css";
 import HomeIcon from "@material-ui/icons/Home";
@@ -8,8 +8,22 @@ import PinterestIcon from "@material-ui/icons/Pinterest";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { Link } from "react-router-dom";
 import Search from "./search";
+import firebase from "./firebase";
+import axios from "axios";
 
 const Header = () => {
+  // const [post, setPost] = useState([]);
+  // useEffect(() => {
+  //   axios
+  //     .get("https://ideacouponsdatabase.firebaseio.com//store")
+  //     .then((res) => {
+  //       console.log(res.data);
+  //       setPost(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // });
   return (
     <div>
       <div className="topHead">

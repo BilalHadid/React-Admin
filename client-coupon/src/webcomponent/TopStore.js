@@ -40,6 +40,7 @@ const TopStore = () => {
       // instead of a settings object
     ],
   };
+
   const [post, setPost] = useState([]);
   useEffect(() => {
     axios

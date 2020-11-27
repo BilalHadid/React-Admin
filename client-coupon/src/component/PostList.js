@@ -14,6 +14,7 @@ import {
   ExportButton,
   sanitizeListRestProps,
   CreateButton,
+  BooleanField,
 } from "react-admin";
 import "./user.css";
 // import jsonExport from "jsonexport/dist";
@@ -28,9 +29,7 @@ const ListActions = (props) => {
     resource,
     displayedFilters,
     filterValues,
-    hasCreate,
     basePath,
-    selectedIds,
     showFilter,
     total,
   } = useListContext();
